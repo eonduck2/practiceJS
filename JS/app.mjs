@@ -20,4 +20,5 @@ aboutInputForm.inputForm.onsubmit = (e) => {
 };
 
 // * 모듈에서 처리된 후 마지막 결과 띄우기
-export const resultTest = (result) => console.log(result);
+export const resultTest = (result) =>
+  console.log(`유저 네임: ${result.userName}, 유저 코드: ${result.userCode}`);
