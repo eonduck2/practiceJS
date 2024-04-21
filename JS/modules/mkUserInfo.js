@@ -30,6 +30,7 @@ class User {
 export const userInfoFunc = (inputFormValues) => {
   const newUserArr = new Array();
   const newUserInfo = new User(inputFormValues);
+
   // * 클래스에서 가공된 데이터 배열에 푸쉬
   newUserArr.push(newUserInfo.userName, newUserInfo.userCode);
   saveUserInfo(newUserArr);
